@@ -1,4 +1,4 @@
-import puppeteer from 'puppeteer'
+import puppeteer_default from 'puppeteer'
 import genericPool from 'generic-pool'
 import initDebug from 'debug'
 const debug = initDebug('puppeteer-pool')
@@ -13,6 +13,7 @@ const initPuppeteerPool = ({
   maxUses = 50,
   testOnBorrow = true,
   puppeteerArgs = [],
+  puppeteer = puppeteer_default,
   validator = () => Promise.resolve(true),
   ...otherConfig
 } = {}) => {
