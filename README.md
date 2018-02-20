@@ -19,7 +19,7 @@ Requires Node v6+
 ## Usage
 
 ```javascript
-const createPuppeteerPool = require('puppeteer-pool')
+const createPuppeteerPool = require('puppeteer-pool');
 
 // Returns a generic-pool instance
 const pool = createPuppeteerPool({
@@ -35,25 +35,25 @@ const pool = createPuppeteerPool({
   testOnBorrow: true, // default
   // For all opts, see opts at https://github.com/coopernurse/node-pool#createpool
   puppeteerArgs: []
-})
+});
 
 // Automatically acquires a puppeteer instance and releases it back to the
 // pool when the function resolves or throws
 pool.use(async (browser) => {
-  const page = await browser.newPage()
-  const status = await page.goto('http://google.com')
+  const page = await browser.newPage();
+  const status = await page.goto('http://google.com');
   if (!status.ok) {
-    throw new Error('cannot open google.com')
+    throw new Error('cannot open google.com');
   }
   const content = await page.content()
-  page.close()
-  return content
+  await page.close();
+  return content;
 }).then((content) => {
-  console.log(content)
-})
+  console.log(content);
+});
 
 // Destroying the pool:
-pool.drain().then(() => pool.clear())
+pool.drain().then(() => pool.clear());
 
 // For more API doc, see https://github.com/coopernurse/node-pool#generic-pool
 ```
