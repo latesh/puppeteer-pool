@@ -9,7 +9,7 @@
   "scripts": {
     "test": "npm run test:fast",
     "build": "npm run clean && babel ./src --out-dir ./lib --copy-files",
-    "prepublish": "npm run build",
+    "postinstall": "npm run build",
     "clean": "rimraf ./lib",
     "lint": "eslint src/ test/",
     "pretest": "npm run lint",
