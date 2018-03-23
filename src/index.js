@@ -12,13 +12,13 @@ const initPuppeteerPool = ({
   // specifies the maximum number of times a resource can be reused before being destroyed
   maxUses = 50,
   testOnBorrow = true,
-  puppeteerArgs = [],
+  puppeteerArgs = {},
   validator = () => Promise.resolve(true),
   ...otherConfig
 } = {}) => {
   // TODO: randomly destroy old instances to avoid resource leak?
   const factory = {
-    create: () => puppeteer.launch(...puppeteerArgs).then(instance => {
+    create: () => puppeteer.launch(puppeteerArgs).then(instance => {
       instance.useCount = 0
       return instance
     }),
