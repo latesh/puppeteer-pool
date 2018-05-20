@@ -2,7 +2,6 @@ import puppeteer from 'puppeteer'
 import genericPool from 'generic-pool'
 import initDebug from 'debug'
 const debug = initDebug('puppeteer-pool')
-let regeneratorRuntime =  require("regenerator-runtime")
 
 const initPuppeteerPool = ({
   max = 10,

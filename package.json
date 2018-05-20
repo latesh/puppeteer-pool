@@ -1,6 +1,6 @@
 {
   "name": "puppeteer-pool",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Resource pool for Node.js Puppeteer",
   "main": "./lib/index.js",
   "directories": {
@@ -36,19 +36,19 @@
     "node": ">=6"
   },
   "devDependencies": {
-    "babel-cli": "^6.18.0",
-    "babel-plugin-add-module-exports": "^0.2.1",
-    "babel-plugin-transform-async-to-generator": "^6.24.1",
-    "babel-plugin-transform-object-rest-spread": "^6.23.0",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-tape-runner": "^2.0.1",
-    "blue-tape": "^1.0.0",
-    "cz-conventional-changelog": "^1.2.0",
-    "eslint": "^4.1.1",
-    "eslint-config-blockai": "^1.0.3",
-    "nodemon": "^1.11.0",
-    "rimraf": "^2.5.4",
-    "semantic-release": "^6.3.2"
+    "babel-cli": "6.26.0",
+    "babel-plugin-add-module-exports": "0.2.1",
+    "babel-plugin-transform-async-to-generator": "6.24.1",
+    "babel-plugin-transform-object-rest-spread": "6.26.0",
+    "babel-preset-es2015": "6.24.1",
+    "babel-tape-runner": "2.0.1",
+    "blue-tape": "1.0.0",
+    "cz-conventional-changelog": "2.1.0",
+    "eslint": "4.19.1",
+    "eslint-config-blockai": "1.0.3",
+    "nodemon": "1.17.4",
+    "rimraf": "2.6.2",
+    "semantic-release": "15.4.1"
   },
   "release": {
     "debug": false,
@@ -62,8 +62,8 @@
     }
   },
   "dependencies": {
-    "debug": "^2.3.3",
-    "generic-pool": "^3.1.4",
-    "puppeteer": "^0.10.2"
+    "debug": "3.1.0",
+    "generic-pool": "3.4.2",
+    "puppeteer": "1.4.0"
   }
 }
