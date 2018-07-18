@@ -32,10 +32,10 @@ build/Release
 data/
 
 # Source directory
-!src/
+src/
 
 # Test directory
-!test/
+test/
 
 .eslintrc
 .babelrc
