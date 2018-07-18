@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/latesh/puppeteer-pool.git"
+    "url": "git+https://github.com/Mettosoft/puppeteer-pool.git"
   },
   "keywords": [
     "puppeteer",
@@ -26,12 +26,12 @@
     "pool",
     "pooling"
   ],
-  "author": "Latesh Galia <lateshg@gmail.com>",
+  "author": "Jonathan Beltran <lateshg@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/latesh/puppeteer-pool/issues"
+    "url": "https://github.com/Mettosoft/puppeteer-pool/issues"
   },
-  "homepage": "https://github.com/latesh/puppeteer-pool#readme",
+  "homepage": "https://github.com/Mettosoft/puppeteer-pool#readme",
   "engines": {
     "node": ">=6"
   },
