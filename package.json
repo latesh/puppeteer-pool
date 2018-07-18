@@ -7,6 +7,7 @@
     "test": "test"
   },
   "scripts": {
+    "prepare" : "npm run build",
     "test": "npm run test:fast",
     "build": "npm run clean && babel ./src --out-dir ./lib --copy-files",
     "clean": "rimraf ./lib",
