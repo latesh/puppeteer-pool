@@ -46,7 +46,7 @@ pool.use(async (browser) => {
     throw new Error('cannot open google.com')
   }
   const content = await page.content()
-  page.close()
+  await page.close()
   return content
 }).then((content) => {
   console.log(content)
