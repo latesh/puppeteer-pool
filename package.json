@@ -1,6 +1,6 @@
 {
   "name": "puppeteer-pool",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Resource pool for Node.js Puppeteer",
   "main": "./lib/index.js",
   "directories": {
@@ -64,6 +64,6 @@
   "dependencies": {
     "debug": "3.1.0",
     "generic-pool": "3.4.2",
-    "puppeteer": "1.4.0"
+    "puppeteer": "1.19.0"
   }
 }
